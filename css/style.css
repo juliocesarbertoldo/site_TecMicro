@@ -257,7 +257,8 @@ nav {
     transition: all 0.3s;
 }
 
-.main {
+.view-geral {
+    width: 100%;
     padding: 20px 10px;
     margin: auto;
     max-width: 1200px;

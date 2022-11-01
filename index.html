@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TecMicro Digital</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/telatablet.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="css/telagrande.css" media="screen and (min-width: 992px)">
     <script src="script/menu-burguer.js"></script>
 </head>
-<body>
+
+<body onresize="mudouTamanho()" onload="mudouTamanho()">
     <header>
         <div class="logo"></div>
         <div class="texto">
@@ -20,55 +24,95 @@
             <h3>Software de Gestão</h3>
         </div>
         <menu class="menu">
-            <span id="bt-burguer" class="material-symbols-outlined bt-burguer" onclick="clickMenu()">menu</span>
+            <span id="btBurguer" class="material-symbols-outlined bt-burguer" onclick="clickMenu()">menu</span>
             <ul id="itensMenu" class="list-menu">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#" onclick="clickSubMenuSistema()">Sistemas</a>
-                    <ul id="itenSubMenuSistema" class="sub-menu">                        
-                        <li><a class="sub-menu" href="#">Loja</a></li>
-                        <li><a class="sub-menu" href="#">Restaurante</a></li>
-                    </ul>
-                </li>
-                <li><a href="#" onclick="clickSubMenuDownloads()">Downloads</a>
-                    <ul id="itenSubMenuDownloads" class="sub-menu">                        
-                        <li><a class="sub-menu" href="#">Bematech 4200</a></li>
-                        <li><a class="sub-menu" href="#">Epson T20</a></li>
-                        <li><a class="sub-menu" href="#">Argox</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#" class="link-whats">Nosso Whats</a></li>
+                <li><a href="#" class="link-sisGestao">Sistema Gestão</a></li>
+                <li><a href="#" class="link-sisDelivery">Sistema Delivery</a></li>
+                <li><a href="#" class="link-faleConosco">Fale Conosco</a></li>
+                <li><a href="#" class="link-suporte">Suporte</a></li>
+                <li id="link-utilitarios"><a href="#" class="link-utilitarios">Utilitários</a></li>
             </ul>
         </menu>
     </header>
     <main>
         <h1>teste</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, omnis mollitia optio est exercitationem deserunt natus nihil officia perferendis repudiandae, ipsum cum saepe quam praesentium inventore libero repellendus voluptates corporis!</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex quam porro, dolore suscipit quia libero quae architecto! Vel mollitia quo excepturi, explicabo assumenda quisquam iste culpa doloremque eius corporis consequatur?</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor iste consequuntur eum voluptatibus ipsum culpa ab ipsam iure ut labore minus eligendi dicta, odit, omnis, aut consectetur tempore atque accusamus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, omnis mollitia optio est exercitationem deserunt natus nihil officia perferendis repudiandae, ipsum cum saepe quam praesentium inventore libero repellendus voluptates corporis!</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex quam porro, dolore suscipit quia libero quae architecto! Vel mollitia quo excepturi, explicabo assumenda quisquam iste culpa doloremque eius corporis consequatur?</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor iste consequuntur eum voluptatibus ipsum culpa ab ipsam iure ut labore minus eligendi dicta, odit, omnis, aut consectetur tempore atque accusamus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, omnis mollitia optio est exercitationem deserunt natus nihil officia perferendis repudiandae, ipsum cum saepe quam praesentium inventore libero repellendus voluptates corporis!</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex quam porro, dolore suscipit quia libero quae architecto! Vel mollitia quo excepturi, explicabo assumenda quisquam iste culpa doloremque eius corporis consequatur?</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor iste consequuntur eum voluptatibus ipsum culpa ab ipsam iure ut labore minus eligendi dicta, odit, omnis, aut consectetur tempore atque accusamus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, omnis mollitia optio est exercitationem deserunt natus nihil officia perferendis repudiandae, ipsum cum saepe quam praesentium inventore libero repellendus voluptates corporis!</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex quam porro, dolore suscipit quia libero quae architecto! Vel mollitia quo excepturi, explicabo assumenda quisquam iste culpa doloremque eius corporis consequatur?</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor iste consequuntur eum voluptatibus ipsum culpa ab ipsam iure ut labore minus eligendi dicta, odit, omnis, aut consectetur tempore atque accusamus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, omnis mollitia optio est exercitationem deserunt natus nihil officia perferendis repudiandae, ipsum cum saepe quam praesentium inventore libero repellendus voluptates corporis!</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex quam porro, dolore suscipit quia libero quae architecto! Vel mollitia quo excepturi, explicabo assumenda quisquam iste culpa doloremque eius corporis consequatur?</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor iste consequuntur eum voluptatibus ipsum culpa ab ipsam iure ut labore minus eligendi dicta, odit, omnis, aut consectetur tempore atque accusamus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, omnis mollitia optio est exercitationem deserunt natus nihil officia perferendis repudiandae, ipsum cum saepe quam praesentium inventore libero repellendus voluptates corporis!</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex quam porro, dolore suscipit quia libero quae architecto! Vel mollitia quo excepturi, explicabo assumenda quisquam iste culpa doloremque eius corporis consequatur?</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor iste consequuntur eum voluptatibus ipsum culpa ab ipsam iure ut labore minus eligendi dicta, odit, omnis, aut consectetur tempore atque accusamus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, omnis mollitia optio est exercitationem deserunt natus nihil officia perferendis repudiandae, ipsum cum saepe quam praesentium inventore libero repellendus voluptates corporis!</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex quam porro, dolore suscipit quia libero quae architecto! Vel mollitia quo excepturi, explicabo assumenda quisquam iste culpa doloremque eius corporis consequatur?</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor iste consequuntur eum voluptatibus ipsum culpa ab ipsam iure ut labore minus eligendi dicta, odit, omnis, aut consectetur tempore atque accusamus!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, omnis mollitia optio est exercitationem deserunt natus nihil officia perferendis repudiandae, ipsum cum saepe quam praesentium inventore libero repellendus voluptates corporis!</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex quam porro, dolore suscipit quia libero quae architecto! Vel mollitia quo excepturi, explicabo assumenda quisquam iste culpa doloremque eius corporis consequatur?</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor iste consequuntur eum voluptatibus ipsum culpa ab ipsam iure ut labore minus eligendi dicta, odit, omnis, aut consectetur tempore atque accusamus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, omnis mollitia optio est exercitationem
+            deserunt natus nihil officia perferendis repudiandae, ipsum cum saepe quam praesentium inventore libero
+            repellendus voluptates corporis!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex quam porro, dolore suscipit quia libero quae
+            architecto! Vel mollitia quo excepturi, explicabo assumenda quisquam iste culpa doloremque eius corporis
+            consequatur?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor iste consequuntur eum voluptatibus ipsum
+            culpa ab ipsam iure ut labore minus eligendi dicta, odit, omnis, aut consectetur tempore atque accusamus!
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, omnis mollitia optio est exercitationem
+            deserunt natus nihil officia perferendis repudiandae, ipsum cum saepe quam praesentium inventore libero
+            repellendus voluptates corporis!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex quam porro, dolore suscipit quia libero quae
+            architecto! Vel mollitia quo excepturi, explicabo assumenda quisquam iste culpa doloremque eius corporis
+            consequatur?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor iste consequuntur eum voluptatibus ipsum
+            culpa ab ipsam iure ut labore minus eligendi dicta, odit, omnis, aut consectetur tempore atque accusamus!
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, omnis mollitia optio est exercitationem
+            deserunt natus nihil officia perferendis repudiandae, ipsum cum saepe quam praesentium inventore libero
+            repellendus voluptates corporis!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex quam porro, dolore suscipit quia libero quae
+            architecto! Vel mollitia quo excepturi, explicabo assumenda quisquam iste culpa doloremque eius corporis
+            consequatur?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor iste consequuntur eum voluptatibus ipsum
+            culpa ab ipsam iure ut labore minus eligendi dicta, odit, omnis, aut consectetur tempore atque accusamus!
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, omnis mollitia optio est exercitationem
+            deserunt natus nihil officia perferendis repudiandae, ipsum cum saepe quam praesentium inventore libero
+            repellendus voluptates corporis!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex quam porro, dolore suscipit quia libero quae
+            architecto! Vel mollitia quo excepturi, explicabo assumenda quisquam iste culpa doloremque eius corporis
+            consequatur?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor iste consequuntur eum voluptatibus ipsum
+            culpa ab ipsam iure ut labore minus eligendi dicta, odit, omnis, aut consectetur tempore atque accusamus!
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, omnis mollitia optio est exercitationem
+            deserunt natus nihil officia perferendis repudiandae, ipsum cum saepe quam praesentium inventore libero
+            repellendus voluptates corporis!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex quam porro, dolore suscipit quia libero quae
+            architecto! Vel mollitia quo excepturi, explicabo assumenda quisquam iste culpa doloremque eius corporis
+            consequatur?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor iste consequuntur eum voluptatibus ipsum
+            culpa ab ipsam iure ut labore minus eligendi dicta, odit, omnis, aut consectetur tempore atque accusamus!
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, omnis mollitia optio est exercitationem
+            deserunt natus nihil officia perferendis repudiandae, ipsum cum saepe quam praesentium inventore libero
+            repellendus voluptates corporis!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex quam porro, dolore suscipit quia libero quae
+            architecto! Vel mollitia quo excepturi, explicabo assumenda quisquam iste culpa doloremque eius corporis
+            consequatur?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor iste consequuntur eum voluptatibus ipsum
+            culpa ab ipsam iure ut labore minus eligendi dicta, odit, omnis, aut consectetur tempore atque accusamus!
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, omnis mollitia optio est exercitationem
+            deserunt natus nihil officia perferendis repudiandae, ipsum cum saepe quam praesentium inventore libero
+            repellendus voluptates corporis!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex quam porro, dolore suscipit quia libero quae
+            architecto! Vel mollitia quo excepturi, explicabo assumenda quisquam iste culpa doloremque eius corporis
+            consequatur?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor iste consequuntur eum voluptatibus ipsum
+            culpa ab ipsam iure ut labore minus eligendi dicta, odit, omnis, aut consectetur tempore atque accusamus!
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, omnis mollitia optio est exercitationem
+            deserunt natus nihil officia perferendis repudiandae, ipsum cum saepe quam praesentium inventore libero
+            repellendus voluptates corporis!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex quam porro, dolore suscipit quia libero quae
+            architecto! Vel mollitia quo excepturi, explicabo assumenda quisquam iste culpa doloremque eius corporis
+            consequatur?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor iste consequuntur eum voluptatibus ipsum
+            culpa ab ipsam iure ut labore minus eligendi dicta, odit, omnis, aut consectetur tempore atque accusamus!
+        </p>
     </main>
     <footer>
 
     </footer>
 </body>
+
 </html>

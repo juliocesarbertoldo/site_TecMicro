@@ -33,19 +33,18 @@ Grandes telas: acima de 1200px
     box-sizing: border-box;
 }
 
-html,
 body{
-    background-color: black;
     font-family: var(--fonte-padrao);
+    background-color: rgb(107, 107, 107);
 }
 
 header {
+    padding-top: 20px;
+    background-color: black;
     background: url("../imagens/fd-escritorio-mobile.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     background-attachment: fixed;
-    padding-top: 20px;
-    
 }
 
 header>.logo {
@@ -102,19 +101,18 @@ header .bt-burguer:hover {
 header .list-menu {
     display: none;
     list-style: none;
-    width: 100%;
-    text-align: center;
-    background-color: var(--cor0);
 }
 
 header .list-menu a {
     display: block;
     font-size: 15px;
+    text-align: center;
     text-transform: uppercase;
     text-decoration: none;
     padding: 10px;
-    border-top: 1px solid var(--cor3);
     color: black;
+    background-color: var(--cor0);
+    border-top: 1px solid var(--cor3);
 }
 
 header .list-menu a:hover {
@@ -137,6 +135,10 @@ header .list-menu a.sub-menu {
 header .list-menu a.sub-menu:hover {
     color: var(--cor1);
     background-color: var(--cor2);
+}
+
+header .list-menu li#link-utilitarios {
+    display: none;
 }
 
 @media screen and (orientation: landscape) {

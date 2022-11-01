@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+header {
+    background: url("../imagens/fd-escritorio-desktop.jpg") no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+header h3 {
+    letter-spacing: 15px;
+}
+
+header .menu {
+    width: 835px;
+    margin: auto;
+}
+
+header .list-menu li#link-utilitarios {
+    margin-left: 18px;
+    display: inline-block;
+}
+
+header .list-menu .link-utilitarios {
+    background: url("../imagens/ico-utilitarios.png") no-repeat;
+    background-color: white;
+    background-position: 50% 30%;
+}

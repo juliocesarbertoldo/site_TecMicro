@@ -73,6 +73,7 @@ header h3 {
     padding: 10px;
     letter-spacing: 11px;
     color: var(--cor0);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 }
 
 header .bt-burguer {

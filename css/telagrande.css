@@ -43,3 +43,10 @@ header .list-menu .link-utilitarios {
     background-color: white;
     background-position: 50% 30%;
 }
+
+main.pag-principal {
+    background: url("../imagens/fd-desktop.png") no-repeat;
+    background-position: right 85%;
+    background-attachment: fixed;
+    background-color: black;
+}

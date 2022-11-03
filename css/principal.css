@@ -23,13 +23,15 @@ Grandes telas: acima de 1200px
     --cor4: #123b61;
     --cor5: #CECECE;
     --cor6: #424242;
+    --cor7: #040829;
     /*CORES COM TRANSPARENCIA*/
-    --cor7: #dbf2ff4d;
+    --cor8: #dbf2ff4d;
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-midia: 'Ubuntu', sans-serif;
     --fonte-destaque: 'Bebas Neue', cursive;
 }
+
 * {
     padding: 0px;
     margin: 0px;
@@ -45,11 +47,12 @@ body{
 
 header {
     padding-top: 20px;
-    background-color: black;
     background: url("../imagens/fd-escritorio-mobile.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     background-attachment: fixed;
+    background-color: black;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 header>.logo {
@@ -61,7 +64,7 @@ header>.logo {
     height: 100px;
 }
 
-header h1 {
+header h1.txt-nomePrincipal {
     font-family: var(--fonte-destaque);
     font-size: 30px;
     letter-spacing: 5px;
@@ -70,7 +73,7 @@ header h1 {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
 }
 
-header h2 {
+header h2.txt-deliveryPrincipal {
     font-family: var(--fonte-midia);
     font-size: 18px;
     font-style: italic;
@@ -80,7 +83,7 @@ header h2 {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
 
-header h3 {
+header h3.txt-gestaoPrincipal {
     display: none;
 }
 
@@ -92,7 +95,7 @@ header .bt-burguer {
     text-align: center;
     width: 100%;
     padding: 10px;
-    background-color: var(--cor7);
+    background-color: var(--cor8);
     color: white;
     cursor: pointer;
 }
@@ -126,20 +129,20 @@ header .list-menu a:hover {
     transition: 0.4s;
 }
 
-header .list-menu ul.sub-menu {
+header .list-menu .link-whats {
     display: none;
 }
 
-header .list-menu a.sub-menu {
-    font-size: 14px;
-    font-style: italic;
-    background-color: var(--cor1);
-    color: var(--cor6);
+header .list-menu .link-faleConosco {
+    display: none;
 }
 
-header .list-menu a.sub-menu:hover {
-    color: var(--cor1);
-    background-color: var(--cor2);
+header .list-menu .link-suporte {
+    display: none;
+}
+
+header .list-menu #link-suporteDesktop {
+    display: none;
 }
 
 header .list-menu li#link-utilitarios {
@@ -156,40 +159,53 @@ header .list-menu li#link-utilitarios {
 
 main.pag-principal {
     padding: 20px;
-    background-color: rgb(110, 139, 182);
-    background-color: rgb(4, 8, 41);
+    background-color: var(--cor7);
 }
 
 main h1 {
-    font-size: 20px;
-    padding: 5px;
-    letter-spacing: 2px;
-    color: white;
-    background-image: linear-gradient(90deg, var(--cor3), transparent);
+    font-size: 18px;
+    font-weight: lighter;
+    letter-spacing: 4px;
+    padding: 0px 10px;
+    max-width: 90%;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    color: white;
 }
 
-main p {
+main p.texto {
     font-family: var(--fonte-midia);
-    text-indent: 30px;
+    font-size: 12px;
     text-align: justify;
-    padding: 10px 20px;
+    padding: 10px;
+    line-height: 1.3;
     color: var(--cor0);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
 main .atendimento {
+    width: 90%;
     padding: 10px;
+    text-indent: 30px;
+    margin: 10px auto 30px;
     border: 1px solid var(--cor5);
     border-radius: 15px;
     background-image: linear-gradient(var(--cor2), var(--cor4));
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
-main h2 {
-    font-size: 20px;
-    letter-spacing: 2px;
-    text-align: center;
-    color: white;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+main .fd-principal a {
+    display: block;
+    font-size: 15px;
+    text-decoration: none;
+    width: 70vw;
+    padding: 20px;
+    margin: auto;
+    background: url("../imagens/logo-whats.png") no-repeat;
+    background-size: contain;
+    background-position: right;
+    background-color: white;
+    color: var(--cor6);
+    border: 2px solid var(--cor5);
+    border-radius: 30px;
+    box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.5);
 }

@@ -1,12 +1,30 @@
 @charset "UTF-8";
 
+:root {
+    --cor0: #E8F7FF;
+    --cor1: #cbecff;
+    --cor2: #0077c7;
+    --cor3: #02579B;
+    --cor4: #123b61;
+    --cor5: #CECECE;
+    --cor6: #424242;
+    --cor7: #040829;
+    /*CORES COM TRANSPARENCIA*/
+    --cor8: #dbf2ff4d;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-midia: 'Ubuntu', sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+}
+
 header {
     background: url("../imagens/fd-escritorio-desktop.jpg") no-repeat;
     background-size: contain;
     background-attachment: fixed;
+    transition: 0s;
 }
 
-header h3 {
+header h3.txt-gestaoPrincipal {
     letter-spacing: 15px;
 }
 

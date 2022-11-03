@@ -20,8 +20,9 @@ Grandes telas: acima de 1200px
     --cor4: #123b61;
     --cor5: #CECECE;
     --cor6: #424242;
+    --cor7: #040829;
     /*CORES COM TRANSPARENCIA*/
-    --cor7: #dbf2ff4d;
+    --cor8: #dbf2ff4d;
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-midia: 'Ubuntu', sans-serif;
@@ -30,7 +31,6 @@ Grandes telas: acima de 1200px
 
 header {
     position: relative;
-    background-color: black;
     height: 340px;
     background: url("../imagens/fd-escritorio-tablet.jpg") no-repeat;
     background-size: cover;
@@ -57,15 +57,15 @@ header .texto {
     line-height: 2;
 }
 
-header h1 {
+header h1.txt-nomePrincipal {
     display: none;
 }
 
-header h2 {
+header h2.txt-deliveryPrincipal {
     letter-spacing: 10px;
 }
 
-header h3 {
+header h3.txt-gestaoPrincipal {
     display: block;
     font-family: var(--fonte-destaque);
     font-size: 35px;
@@ -113,6 +113,7 @@ header .list-menu a:hover {
 }
 
 header .list-menu .link-whats {
+    display: block;
     background: url("../imagens/ico-whats.png") no-repeat;
     background-color: white;
     background-position: 50% 30%;
@@ -132,12 +133,14 @@ header .list-menu .link-sisDelivery {
 }
 
 header .list-menu .link-faleConosco {
+    display: block;
     background: url("../imagens/ico-faleConosco.png") no-repeat;
     background-color: white;
     background-position: 50% 30%;
 }
 
 header .list-menu .link-suporte {
+    display: block;
     font-weight: bolder;
     width: 140px;
     color: var(--cor0);
@@ -150,4 +153,40 @@ header .list-menu .link-suporte {
 
 header .list-menu .link-suporte:hover {
     scale: 1.2;
+}
+
+main.pag-principal {
+    padding-top: 80px;
+    background: url("../imagens/fd-tablet.png") no-repeat;
+    background-position: 50% 55%;
+    background-attachment: fixed;
+    background-color: black;
+}
+
+main .compromisso {
+    padding: 10px;
+    background-color: var(--cor6);
+    border: 1px solid var(--cor8);
+    margin-bottom: 50px;
+}
+
+main .compromisso h1 {
+    display: none;
+}
+
+main .atendimento {
+    width: 70vw;
+    padding: 30px;
+    background: none;
+    color: var(--cor7);
+    background-color: var(--cor8);
+}
+
+main p.texto {
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+main .fd-principal a {
+    display: none;
 }

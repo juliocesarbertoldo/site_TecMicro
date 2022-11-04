@@ -187,6 +187,6 @@ main p.texto {
     letter-spacing: 2px;
 }
 
-main .fd-principal a {
+main a.fd-principal {
     display: none;
 }

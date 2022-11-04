@@ -213,7 +213,7 @@ main a.fd-principal {
 
 section.pag-sistemaGestao {
     background-color: white;
-    box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -236,6 +236,7 @@ section.pag-sistemaGestao {
 }
 
 .pag-sistemaGestao ul.list-gestao {
+    max-width: 700px;
     font-size: 12px;
     list-style: none;
     margin: auto;

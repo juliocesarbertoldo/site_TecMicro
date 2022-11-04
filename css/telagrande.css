@@ -88,3 +88,60 @@ main .atendimento p:hover {
     scale: 1.2;
     transition: 0.8s;
 }
+
+section.pag-sistemaGestao {
+    padding-top: 3px;
+}
+
+section.pag-sistemaGestao .conteudo-gestao {
+    background: url("../imagens/fd-sistemaGestao-grande.png") no-repeat;
+    background-size: cover;
+}
+
+.pag-sistemaGestao h4 {
+    font-family: var(--fonte-destaque);
+    font-size: 60px;
+    padding-top: 50px;
+    letter-spacing: 10px;
+    max-width: 500px;
+    background: none;
+    color: var(--cor7);
+    border: none;
+    box-shadow: none;
+}
+
+.pag-sistemaGestao .list-gestao {
+    padding: 0px;
+}
+
+.pag-sistemaGestao li {
+    width: 150px;
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid var(--cor5);
+    border-radius: 0px;
+}
+
+.pag-sistemaGestao li.list-baixo {
+    border: none;
+}
+
+.pag-sistemaGestao li:hover {
+    background: none;
+    box-shadow: none;
+    color: var(--cor4);
+}
+
+.pag-sistemaGestao .faixa-1 {
+    float: right;
+    width: 70vw;
+    height: 250px;
+    background-image: linear-gradient(to top, black 80%, transparent 1%);
+}
+
+.pag-sistemaGestao .faixa-2 {
+    position: relative;
+    width: 35vw;
+    height: 200px;
+    background-image: linear-gradient(90deg, var(--cor2), var(--cor7));
+}

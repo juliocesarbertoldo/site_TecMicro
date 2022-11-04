@@ -160,16 +160,17 @@ header .list-menu li#link-utilitarios {
 main.pag-principal {
     padding: 20px;
     background-color: var(--cor7);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.8);
 }
 
 main h1 {
     font-size: 18px;
-    font-weight: lighter;
     letter-spacing: 4px;
     padding: 0px 10px;
     max-width: 90%;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     color: white;
+    background-image: linear-gradient(90deg, var(--cor2), transparent);
 }
 
 main p.texto {
@@ -209,3 +210,65 @@ main a.fd-principal {
     border-radius: 30px;
     box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.5);
 }
+
+section.pag-sistemaGestao {
+    background-color: white;
+    box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+
+.pag-sistemaGestao article.conteudo-gestao {
+    max-width: 1000px;
+    padding: 20px;
+    margin: auto;
+}
+
+.pag-sistemaGestao h4 {
+    font-family: var(--fonte-midia);
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    border-bottom: 1px solid var(--cor5);
+    margin-bottom: 15px;
+}
+
+.pag-sistemaGestao ul.list-gestao {
+    font-size: 12px;
+    list-style: none;
+    margin: auto;
+    text-align: center;
+    columns: 3;
+}
+
+.pag-sistemaGestao li {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 12px;
+    margin-left: 0px;
+    padding: 2px;
+    padding-top: 10px;
+    line-height: 1.2;
+    border: 1px solid var(--cor2);
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+}
+
+.pag-sistemaGestao strong {
+    font-size: 14px;
+    color: var(--cor2);
+}
+
+.pag-sistemaGestao h5 {
+    font-family: var(--fonte-midia);
+    font-size: 10px;
+    letter-spacing: 5px;
+    text-align: right;
+    padding: 10px;
+    color: #a3a3a3;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
+}
+

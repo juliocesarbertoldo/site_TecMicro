@@ -11,6 +11,11 @@
     --cor7: #040829;
     /*CORES COM TRANSPARENCIA*/
     --cor8: #dbf2ff4d;
+    /*************************/
+    --cor9: #bd1b1b;
+    --cor10: #00ff00;
+    --cor11: #531a03;
+    --cor12: #ffa500;
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-midia: 'Ubuntu', sans-serif;
@@ -19,7 +24,7 @@
 
 header {
     background: url("../imagens/fd-escritorio-desktop.jpg") no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-attachment: fixed;
     transition: 0s;
 }
@@ -76,6 +81,7 @@ main .atendimento {
 
 main .atendimento p {
     font-size: 18px;
+    cursor: pointer;
 }
 
 main .atendimento em {
@@ -144,4 +150,43 @@ section.pag-sistemaGestao .conteudo-gestao {
     width: 35vw;
     height: 200px;
     background-image: linear-gradient(90deg, var(--cor2), var(--cor7));
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5)
+}
+
+section.pag-sistemaDelivery .conteudo-delivery {
+    padding-top: 100px;
+}
+
+section.pag-sistemaDelivery h4 {
+    font-size: 35px;
+    padding: 10px;
+}
+
+.pag-sistemaDelivery ul {
+    max-width: fit-content;
+    margin-top: 100px;
+}
+
+.pag-sistemaDelivery li {
+    border: 3px solid var(--cor9);
+    height: 100px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.pag-sistemaDelivery .list-pao,
+.pag-sistemaDelivery .list-tomate,
+.pag-sistemaDelivery .list-alface,
+.pag-sistemaDelivery .list-hamburguer,
+.pag-sistemaDelivery .list-paoBase {
+    background: none;
+    display: block;
+    vertical-align: middle;
+    border-radius: 0px;
+    box-shadow: none;
+    text-shadow: none;
+    color: var(--cor9);
+    float: right;
+    width: 200px;
+    margin-top: 10px;
 }

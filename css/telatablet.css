@@ -23,6 +23,11 @@ Grandes telas: acima de 1200px
     --cor7: #040829;
     /*CORES COM TRANSPARENCIA*/
     --cor8: #dbf2ff4d;
+    /*************************/
+    --cor9: #bd1b1b;
+    --cor10: #00ff00;
+    --cor11: #531a03;
+    --cor12: #ffa500;
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-midia: 'Ubuntu', sans-serif;
@@ -192,9 +197,9 @@ main a.fd-principal {
 }
 
 section.pag-sistemaGestao .conteudo-gestao {
+    padding-top: 30px;
     background: url("../imagens/fd-sistemaGestao-tablet.png") no-repeat;
     background-position: 0% 70%;
-    padding-top: 30px;
 }
 
 .pag-sistemaGestao h4 {
@@ -215,14 +220,56 @@ section.pag-sistemaGestao .conteudo-gestao {
     padding-left: 50px;
 }
 
-.pag-sistemaGestao li:hover {
-    background-color: var(--cor8);
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+.pag-sistemaGestao li {
+    padding-top: 30px;
+    cursor: pointer;
 }
 
-.pag-sistemaGestao h5 {
+.pag-sistemaGestao li:hover {
+    padding-top: 10px;
+    background-color: var(--cor8);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+}
+
+.pag-sistemaGestao em {
+    opacity: 0;
+}
+
+.pag-sistemaGestao li:hover em {
+    opacity: 1;;
+    transition: 0.7s;
+}
+
+.pag-sistemas h5 {
     font-size: 12px;
     padding: 20px;
     padding-top: 50px;
     letter-spacing: 10px;
+}
+
+section.pag-sistemaDelivery .conteudo-delivery {
+    background: url("../imagens/fd-sistemaDelivery-tablet.jpg") no-repeat;
+    background-position: 100%;
+}
+
+.pag-sistemaDelivery h4 {
+    padding-top: 20px;
+}
+section.pag-sistemaDelivery .conteudo-delivery ul{
+    width: 60%;
+    display: inline-block;
+}
+
+.pag-sistemaDelivery h6 {
+    display: block;
+    float: right;
+    width: 200px;
+    font-family: var(--fonte-midia);
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    letter-spacing: 5px;
+    margin: 50px 85px 0px 0px;
+    color: var(--cor7);
 }

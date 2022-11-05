@@ -237,7 +237,7 @@ section.pag-sistemaGestao .conteudo-gestao {
 }
 
 .pag-sistemaGestao li:hover em {
-    opacity: 1;;
+    opacity: 1;
     transition: 0.7s;
 }
 

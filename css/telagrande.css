@@ -154,7 +154,9 @@ section.pag-sistemaGestao .conteudo-gestao {
 }
 
 section.pag-sistemaDelivery .conteudo-delivery {
-    padding-top: 100px;
+    padding: 80px 20px;
+    background: url("../imagens/fd-sistemaDelivery-grande.jpg") no-repeat;
+    background-position: 70%;
 }
 
 section.pag-sistemaDelivery h4 {
@@ -164,14 +166,32 @@ section.pag-sistemaDelivery h4 {
 
 .pag-sistemaDelivery ul {
     max-width: fit-content;
-    margin-top: 100px;
+    margin: 10px;
 }
 
 .pag-sistemaDelivery li {
-    border: 3px solid var(--cor9);
-    height: 100px;
     display: table-cell;
     vertical-align: middle;
+    height: 80px;
+    margin-bottom: 20px;
+    border: 3px solid var(--cor9);
+    border-left: none;
+    border-radius: 0px 20px 20px 0px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.pag-sistemaDelivery em {
+    display: inline-block;
+    text-align: center;
+    font-size: 12px;
+    max-width: 200px;
+    padding: 10px;
+}
+
+.pag-sistemaDelivery em {
+    opacity: 0;
+    margin-left: -200px;
 }
 
 .pag-sistemaDelivery .list-pao,
@@ -179,14 +199,33 @@ section.pag-sistemaDelivery h4 {
 .pag-sistemaDelivery .list-alface,
 .pag-sistemaDelivery .list-hamburguer,
 .pag-sistemaDelivery .list-paoBase {
+    display: inline-block;   
     background: none;
-    display: block;
-    vertical-align: middle;
     border-radius: 0px;
     box-shadow: none;
     text-shadow: none;
+    font-size: 15px;
     color: var(--cor9);
-    float: right;
-    width: 200px;
-    margin-top: 10px;
+    width: 100px;
+    padding: 5px;
+}
+
+.pag-sistemaDelivery li:hover em {
+    opacity: 1;
+    margin-left: 0px;
+    transition: 0.5s;
+}
+
+.pag-sistemaDelivery .texto-meio {
+    margin-bottom: 10px;
+}
+
+.pag-sistemaDelivery h5 {
+    padding: 20px;
+}
+
+.pag-sistemaDelivery h6.texto-esquerda {
+    font-size: 12px;
+    padding: 15px;
+    color: var(--cor6);
 }

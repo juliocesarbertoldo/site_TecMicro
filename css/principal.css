@@ -337,6 +337,10 @@ section.pag-sistemaDelivery h4 {
     border-radius: 5px 5px 20px 20px;
 }
 
+.pag-sistemaDelivery em {
+    display: none;
+}
+
 .pag-sistemaDelivery h6 {
     display: none;
 }

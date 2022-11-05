@@ -273,3 +273,7 @@ section.pag-sistemaDelivery .conteudo-delivery ul{
     margin: 50px 85px 0px 0px;
     color: var(--cor7);
 }
+
+.pag-sistemaDelivery h6.texto-esquerda {
+    display: none;
+}

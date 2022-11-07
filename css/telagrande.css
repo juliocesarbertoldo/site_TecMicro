@@ -16,6 +16,7 @@
     --cor10: #00ff00;
     --cor11: #531a03;
     --cor12: #ffa500;
+    --cor13: #200000;
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-midia: 'Ubuntu', sans-serif;
@@ -142,7 +143,7 @@ section.pag-sistemaGestao .conteudo-gestao {
     float: right;
     width: 70vw;
     height: 250px;
-    background-image: linear-gradient(to top, black 80%, transparent 1%);
+    background-image: linear-gradient(to top, black 80%, white 1%);
 }
 
 .pag-sistemaGestao .faixa-2 {
@@ -151,6 +152,10 @@ section.pag-sistemaGestao .conteudo-gestao {
     height: 200px;
     background-image: linear-gradient(90deg, var(--cor2), var(--cor7));
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5)
+}
+
+section.pag-sistemaDelivery {
+    background-color: #fdfdfd;
 }
 
 section.pag-sistemaDelivery .conteudo-delivery {
@@ -229,4 +234,19 @@ section.pag-sistemaDelivery h4 {
     font-size: 12px;
     padding: 15px;
     color: var(--cor6);
+}
+
+.pag-sistemaDelivery .faixa-1 {
+    float: right;
+    width: 35vw;
+    height: 250px;
+    background-image: linear-gradient(to top, black 80%, white 1%);
+}
+
+.pag-sistemaDelivery .faixa-2 {
+    position: relative;
+    width: 70vw;
+    height: 200px;
+    background-image: linear-gradient(90deg, var(--cor9), var(--cor13));
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5)
 }

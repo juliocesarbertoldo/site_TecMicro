@@ -248,6 +248,11 @@ section.pag-sistemaGestao .conteudo-gestao {
     letter-spacing: 10px;
 }
 
+.pag-sistemaGestao .faixa-1 {
+    height: 100px;
+    background-image: linear-gradient(var(--cor2), var(--cor7));
+}
+
 section.pag-sistemaDelivery .conteudo-delivery {
     background: url("../imagens/fd-sistemaDelivery-tablet.jpg") no-repeat;
     background-position: 100%;

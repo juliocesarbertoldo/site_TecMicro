@@ -22,7 +22,7 @@ Grandes telas: acima de 1200px
     --cor3: #02579B;
     --cor4: #123b61;
     --cor5: #CECECE;
-    --cor6: #424242;
+    --cor6: #0D0D0D;
     --cor7: #040829;
     /*CORES COM TRANSPARENCIA*/
     --cor8: #dbf2ff4d;
@@ -280,7 +280,7 @@ section.pag-sistemas {
 
 .pag-sistemaGestao .faixa-1 {
     height: 50px;
-    background-color: var(--cor4);
+    background-image: linear-gradient(10deg, var(--cor3), var(--cor9));
 }
 
 section.pag-sistemaDelivery h4 {
@@ -369,28 +369,99 @@ section.pag-utilitarios {
 
 
 footer.rodape {
-    background-color: rgb(131, 121, 121);
-    height: 200px;
+    position: relative;
+    font-size: 12px;
+    padding: 20px;
+    background-color: var(--cor6);
+    color: var(--cor5);
+}
+
+.rodape h3 {
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 5px 0px;
 }
 
 .rodape ul {
-    margin: 50px auto;
-    width: 90vw;
-    text-align: center;
+    font-size: 12px;
+    list-style: none;
 }
 
 .rodape li {
     display: inline-block;
-    height: 50px;
-    background-color: red;
 }
 
-.rodape span {
-    display: block;
-    width: 40px;
-    height: 40px;
-    margin: auto;
-    background: url("../imagens/ico-faleConosco.png") no-repeat;
-    background-size: contain;
-    background-color: blue;
+.rodape p {
+    text-align: justify;
+    padding: 5px 0px;
+}
+
+.rodape p a {
+    text-decoration: none;
+    color: var(--cor5);
+}
+
+.rodape p a:hover {
+    color: var(--cor2);
+    background: none;
+}
+
+.rodape .links-rodape {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 5px 5px 20px 0px;
+    border-radius: 5px;
+}
+
+.rodape .link-face {
+    background: url("../imagens/ico-face.png") no-repeat;
+    background-position: 50% 50%;
+    transform: translate(-50% -50%);
+    background-color: #151515;
+}
+
+.rodape .link-insta {
+    background: url("../imagens/ico-insta.png") no-repeat;
+    background-position: 50% 50%;
+    transform: translate(-50% -50%);
+    background-color: #151515;
+}
+
+.rodape .link-email {
+    background: url("../imagens/ico-email.png") no-repeat;
+    background-position: 50% 50%;
+    transform: translate(-50% -50%);
+    background-color: #151515;
+}
+
+.rodape .link-mm {
+    background: url("../imagens/ico-mm.png") no-repeat;
+    background-position: 50% 50%;
+    transform: translate(-50% -50%);
+    background-color: #151515;
+}
+
+.rodape a:hover {
+    background-color: var(--cor2);
+    transition: all 0.5s;
+}
+
+.rodape h3::before {
+    position: absolute;
+    content: '';
+    width: 15%;
+    height: 2px;
+    background-color: var(--cor2);
+    top: 45px;
+}
+
+.rodape h3::after {
+    position: absolute;
+    content: '';
+    width: 80%;
+    height: 2px;
+    background-color: #151515;
+    top: 45px;
+    left: 80px;
 }

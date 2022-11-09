@@ -355,12 +355,12 @@ section.pag-utilitarios {
     display: none;
 }
 
-footer.rodape {
+footer.pag-faleconosco .rodape {
+    max-width: 1200px;
     font-size: 12px;
-    padding: 0px 20px;
+    padding: 0px 20px 20px;
     background-color: var(--cor6);
     color: var(--cor5);
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
 }
 
 .rodape .conteudo-rodape {
@@ -373,7 +373,7 @@ footer.rodape {
     padding: 20px 0px;
 }
 
-.rodape h3::before {
+.rodape .conteudo-rodape::before {
     position: absolute;
     content: '';
     width: 15%;
@@ -382,10 +382,10 @@ footer.rodape {
     top: 45px;
 }
 
-.rodape h3::after {
+.rodape .conteudo-rodape::after {
     position: absolute;
     content: '';
-    width: 86%;
+    width: 89%;
     height: 2px;
     background-color: #151515;
     top: 45px;
@@ -529,18 +529,21 @@ footer.rodape {
     width: 100%;
     padding: 5px;
     color: white;
-    background-color: var(--cor2);
+    background-color: var(--cor3);
     cursor: pointer;
     border: 1px solid #808080;
 }
 
-.rodape span {
+.contato button:hover {
+    background-color: var(--cor2);
+}
+
+span {
     font-size: 10px;
     display: block;
-    width: 100vw;
     padding: 10px;
-    margin: 10px auto auto -20px;
     text-align: center;
+    color: var(--cor5);
     background-color: #070707;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
 }

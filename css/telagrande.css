@@ -39,6 +39,11 @@ header .menu {
     margin: auto;
 }
 
+header .list-menu .link-sisDelivery {
+    margin-left: 1px;
+    margin-right: -1px;
+}
+
 header .list-menu li#link-utilitarios {
     margin-left: 18px;
     display: inline-block;
@@ -250,6 +255,14 @@ section.pag-sistemaDelivery h4 {
     background-image: linear-gradient(90deg, var(--cor9), var(--cor13));
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5)
 }
+
+section.pag-utilitarios {
+    display: block;
+    background-image: linear-gradient(white , var(--cor5));
+    height: 500px;
+}
+
+
 
 
 

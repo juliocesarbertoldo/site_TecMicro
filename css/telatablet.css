@@ -283,24 +283,6 @@ section.pag-sistemaDelivery .conteudo-delivery ul{
     display: none;
 }
 
-section.pag-utilitarios {
-    display: block;
-}
-
-
-
-
-
-
-
-
-
-
-footer.pag-faleconosco {
-    padding-top: 50px;
-    background-color: var(--cor6);
-}
-
 footer.pag-faleconosco .rodape {
     display: flex;
     margin: auto;

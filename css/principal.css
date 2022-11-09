@@ -350,17 +350,19 @@ section.pag-sistemaDelivery h4 {
     display: none;
 }
 
-section.pag-contato,
 section.pag-utilitarios {
     display: none;
+}
+
+footer.pag-faleconosco {
+    background-color: var(--cor6);
+    color: var(--cor5);
 }
 
 footer.pag-faleconosco .rodape {
     max-width: 1200px;
     font-size: 12px;
     padding: 0px 20px 20px;
-    background-color: var(--cor6);
-    color: var(--cor5);
 }
 
 .rodape .conteudo-rodape {
@@ -371,6 +373,7 @@ footer.pag-faleconosco .rodape {
     font-size: 15px;
     text-transform: uppercase;
     padding: 20px 0px;
+    color: white;
 }
 
 .rodape .conteudo-rodape::before {

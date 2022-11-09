@@ -11,7 +11,8 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/principal.css">
     <link rel="stylesheet" href="css/telatablet.css" media="screen and (min-width: 768px)">
-    <link rel="stylesheet" href="css/telagrande.css" media="screen and (min-width: 992px)">
+    <link rel="stylesheet" href="css/telagrande.css" media="screen and (min-width: 1006px)">
+    <script src="script/menu-burguer.js"></script>
 </head>
 
 <body onresize="mudouTamanho()" onload="mudouTamanho()">
@@ -57,10 +58,11 @@
                         específicas com usabilidade fácil para lanchonetes e restaurantes
                     </em>
                 </p>
-            </as>
+                </as>
         </article>
         <a class="fd-principal" href="https://wa.me/554499041018" target="_blank">Clique para conversar</a>
     </main>
+
     <section id="pag-sistemaGestao" class="pag-sistemas pag-sistemaGestao">
         <article class="conteudos conteudo-gestao">
             <h4>Um sistema completo para sua gestão!</h4>
@@ -83,6 +85,7 @@
         <div class="faixa-1"></div>
         <div class="faixa-2"></div>
     </section>
+
     <section id="pag-sistemaDelivery" class="pag-sistemas pag-sistemaDelivery">
         <article class="conteudos conteudo-delivery">
             <h4>Que tal agilizar o atendimento e pedido dos seus clientes?</h4>
@@ -122,17 +125,22 @@
 
         </article>
     </section>
+
     <section id="pag-utilitarios" class="pag-utilitarios">
         <article class="conteudo-utilitarios">
-
+                
         </article>
     </section>
+
     <footer id="pag-faleconosco" class="pag-faleconosco">
         <article class="rodape">
             <aside class="sobreNos conteudo-rodape">
                 <h3>Sobre nós</h3>
                 <p>
-                    Somos uma equipe especializada em serviços de informática. Trbalhamos com Software de Gestão para lojas e restaurantes juntamente com nossos parceiros <strong><a href="https://mminfo.me/" target="_blank">MM INFORMÁTICA</a></strong> e, prestamos manutenção de rede e hardware local.
+                    Somos uma equipe especializada em serviços de informática. Trbalhamos com Software de Gestão para
+                    lojas e restaurantes juntamente com nossos parceiros <strong><a href="https://mminfo.me/"
+                            target="_blank">MM INFORMÁTICA</a></strong> e, prestamos manutenção de rede e hardware
+                    local.
                 </p>
                 <a class="links-rodape link-face" href="https://www.facebook.com/tecmicrodigital" target="_blank"></a>
                 <a class="links-rodape link-insta" href="https://www.instagram.com/tecmicrodigital" target="_blank"></a>
@@ -142,9 +150,17 @@
             <aside class="endereco conteudo-rodape">
                 <h3>Endereço</h3>
                 <ul>
-                    <li><a class="link-maps" href="https://www.google.com/maps/place/TECMICRO+DIGITAL/@-23.4883866,-51.7948302,17z/data=!3m1!4b1!4m5!3m4!1s0x94ecc5a05790cbfb:0xd6597ed4f2dde5cf!8m2!3d-23.4883866!4d-51.7926415" target="_blank"></a><p>Avenida Rui Barbosa, 140 - Centro, Marialva-PR</p></li>
-                    <li><a class="link-phone" href="tel:+554430152842"></a><p>(44) 3015-2842 / (44) 99914-1018</p></li>
-                    <li><a class="link-mail" href="malito:tecmicro@tecmicrodigital.com.br"></a><p>tecmicro@tecmicrodigital.com.br</p></li>
+                    <li><a class="link-maps"
+                            href="https://www.google.com/maps/place/TECMICRO+DIGITAL/@-23.4883866,-51.7948302,17z/data=!3m1!4b1!4m5!3m4!1s0x94ecc5a05790cbfb:0xd6597ed4f2dde5cf!8m2!3d-23.4883866!4d-51.7926415"
+                            target="_blank"></a>
+                        <p>Avenida Rui Barbosa, 140 - Centro, Marialva-PR</p>
+                    </li>
+                    <li><a class="link-phone" href="tel:+554430152842"></a>
+                        <p>(44) 3015-2842 / (44) 99914-1018</p>
+                    </li>
+                    <li><a class="link-mail" href="malito:tecmicro@tecmicrodigital.com.br"></a>
+                        <p>tecmicro@tecmicrodigital.com.br</p>
+                    </li>
                 </ul>
             </aside>
             <aside class="contato conteudo-rodape">
@@ -164,6 +180,35 @@
         </article>
         <span>&copy Desenvolvido por TecMicro Digital</span>
     </footer>
+
+    <script>
+        $(function () {
+
+            $('form').on('submit', function (e) {
+                var result_line = document.getElementById("result-line");
+                var convert_btn = document.getElementById("convertbtn");
+                convert_btn.style.opacity = "0.4";
+                convert_btn.innerHTML = "Checando...";
+                result_line.innerHTML = "Efetuando Teste...";
+
+                e.preventDefault();
+
+                $.ajax({
+                type: 'post',
+                url: 'check/check_port.php',
+                data: $('form').serialize(),
+                success: function(response) {
+                    res = response.split("%");
+                    result_line.innerHTML = res[1];
+                    convert_btn.style.opacity = "";
+                    convert_btn.innerHTML = "Verificar";
+                }
+                });
+
+            });
+
+        });
+    </script>
 </body>
 
 </html>

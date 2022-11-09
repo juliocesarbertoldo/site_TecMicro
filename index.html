@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="css/principal.css">
     <link rel="stylesheet" href="css/telatablet.css" media="screen and (min-width: 768px)">
     <link rel="stylesheet" href="css/telagrande.css" media="screen and (min-width: 992px)">
-    <script src="script/menu-burguer.js"></script>
 </head>
 
 <body onresize="mudouTamanho()" onload="mudouTamanho()">
@@ -136,12 +135,32 @@
             </p>
             <a class="links-rodape link-face" href="https://www.facebook.com/tecmicrodigital" target="_blank"></a>
             <a class="links-rodape link-insta" href="https://www.instagram.com/tecmicrodigital" target="_blank"></a>
-            <a class="links-rodape link-email" href="mailto:tecmicro@tecmicrodigital.com.br" target="_blank"></a>
+            <a class="links-rodape link-tecmicro" href="https://tecmicrodigital.com.br/" target="_blank"></a>
             <a class="links-rodape link-mm" href="https://mminfo.me/" target="_blank"></a>
         </aside>
         <aside class="endereco conteudo-rodape">
             <h3>Endereço</h3>
+            <ul>
+                <li><a class="link-maps" href="https://www.google.com/maps/place/TECMICRO+DIGITAL/@-23.4883866,-51.7948302,17z/data=!3m1!4b1!4m5!3m4!1s0x94ecc5a05790cbfb:0xd6597ed4f2dde5cf!8m2!3d-23.4883866!4d-51.7926415" target="_blank"></a><p>Avenida Rui Barbosa, 140 - Centro, Marialva-PR</p></li>
+                <li><a class="link-phone" href="tel:+554430152842"></a><p>(44) 3015-2842 / (44) 99914-1018</p></li>
+                <li><a class="link-mail" href="malito:tecmicro@tecmicrodigital.com.br"></a><p>tecmicro@tecmicrodigital.com.br</p></li>
+            </ul>
         </aside>
+        <aside class="contato conteudo-rodape">
+            <h3>Contato</h3>
+            <form action="enviar.php">
+                <p>
+                    <label for="iemail">Email *</label>
+                    <input type="email" name="email" id="iemail" required placeholder="Seu e-mail">
+                </p>
+                <p>
+                    <label for="imsg">Mensagem *</label>
+                    <textarea name="msg" id="imsg" cols="30" rows="3" placeholder="Deixe sua mensagem"></textarea>
+                </p>
+                <button type="submit">Enviar</button>
+            </form>
+        </aside>
+        <span>&copy Desenvolvido por TecMicro Digital</span>
     </footer>
 </body>
 

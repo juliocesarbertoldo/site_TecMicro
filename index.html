@@ -29,7 +29,7 @@
                 <li><a href="https://wa.me/554499041018" target="_blank" class="link-whats">Nosso Whats</a></li>
                 <li><a href="#pag-sistemaGestao" class="link-sisGestao">Sistema Gestão</a></li>
                 <li><a href="#pag-sistemaDelivery" class="link-sisDelivery">Sistema Delivery</a></li>
-                <li><a href="#" class="link-faleConosco">Fale Conosco</a></li>
+                <li><a href="#pag-faleconosco" class="link-faleConosco">Fale Conosco</a></li>
                 <li><a href="#" class="link-suporte">Suporte</a></li>
                 <li id="link-utilitarios"><a href="#" class="link-utilitarios">Utilitários</a></li>
             </ul>
@@ -128,7 +128,45 @@
 
     <section id="pag-utilitarios" class="pag-utilitarios">
         <article class="conteudo-utilitarios">
-                
+                <table>
+                    <tr>
+                        <th colspan="4">Clientes e Amigos</th>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Annie</a></td>
+                        <td><a href="#">RadarMix</a></td>
+                        <td><a href="#">Bom Jesus</a></td>
+                        <td><a href="#">Multybichos</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Chibay</a></td>
+                        <td><a href="#">Ichiban</a></td>
+                        <td><a href="#">PrimeBurg</a></td>
+                        <td><a href="#">Trogue</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">AgroTech</a></td>
+                        <td><a href="#">Wa</a></td>
+                        <td><a href="#">Surubim</a></td>
+                        <td><a href="#">LigGas</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Boteco do Liu</a></td>
+                        <td><a href="#">Pesqueiro Vacari</a></td>
+                        <td><a href="#">Mantelato</a></td>
+                        <td><a href="#">LigGas</a></td>
+                    </tr>
+                </table>
+                <aside>
+                    <h2>Download Utilitários</h2>
+                    <ul>
+                        <li><a href="#">4200</a></li>
+                        <li><a href="#">t20</a></li>
+                        <li><a href="#">argox</a></li>
+                        <li><a href="#">pdf</a></li>
+                        <li><a href="#">Serial</a></li>
+                    </ul>
+                </aside>
         </article>
     </section>
 
@@ -180,35 +218,5 @@
         </article>
         <span>&copy Desenvolvido por TecMicro Digital</span>
     </footer>
-
-    <script>
-        $(function () {
-
-            $('form').on('submit', function (e) {
-                var result_line = document.getElementById("result-line");
-                var convert_btn = document.getElementById("convertbtn");
-                convert_btn.style.opacity = "0.4";
-                convert_btn.innerHTML = "Checando...";
-                result_line.innerHTML = "Efetuando Teste...";
-
-                e.preventDefault();
-
-                $.ajax({
-                type: 'post',
-                url: 'check/check_port.php',
-                data: $('form').serialize(),
-                success: function(response) {
-                    res = response.split("%");
-                    result_line.innerHTML = res[1];
-                    convert_btn.style.opacity = "";
-                    convert_btn.innerHTML = "Verificar";
-                }
-                });
-
-            });
-
-        });
-    </script>
 </body>
-
 </html>

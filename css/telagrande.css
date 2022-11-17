@@ -269,11 +269,7 @@ section.pag-utilitarios {
 
 .pag-utilitarios .parceiros {
     display: inline-block;
-    width: 50%;
-}
-
-.pag-utilitarios .parceiros table {
-    margin: 20px auto;
+    width: 70%;
 }
 
 .pag-utilitarios h2 {
@@ -290,42 +286,53 @@ section.pag-utilitarios {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-.pag-utilitarios tr {
-
+.pag-utilitarios .parceiros table {
+    margin: 20px auto;
+    border-collapse: collapse;
 }
 
 .pag-utilitarios td {
-    width: 120px;
-    height: 80px;
+    font-weight: bold;
+    font-size: 10px;
+    width: 150px;
+    height: 100px;
     text-align: center;
+    color: transparent;
+    border: 2px solid var(--cor5);
+    vertical-align: bottom;
+    cursor: pointer;
 }
 
-.pag-utilitarios td a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    padding-top: 54px;
-    font-size: 11px;
-    text-decoration: none;
+.pag-utilitarios td.annieb {
+    background: url("../imagens/logo-annieb.png") no-repeat;
+    background-position: 50%;
+}
+
+.pag-utilitarios td.bomJesus {
+    background: url("../imagens/logo-bomJesus.png") no-repeat;
+    background-position: 50%;
+}
+
+.pag-utilitarios td.multybichos {
+    background: url("../imagens/logo-multybichos.png") no-repeat;
+    background-position: 50%;
+}
+
+.pag-utilitarios td.chibay {
+    background: url("../imagens/logo-chibay.png") no-repeat;
+    background-position: 50%;
+}
+
+.pag-utilitarios td:hover {
     color: var(--cor6);
-    fborder: 1px solid var(--cor5);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s;
 }
-
-.pag-utilitarios td:hover a{
-    background-color: rgba(0, 0, 0, 0.1);
-    margin-bottom: 5px;
-    transition: all 0.3s;
-}
-
 .pag-utilitarios .downloads {
     float: right;
-    width: 50%;
+    width: 30%;
     background-color: red;
 }
-
-
-
-
 
 footer .rodape .conteudo-rodape::after {
     width: 85%;

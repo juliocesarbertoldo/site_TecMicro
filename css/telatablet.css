@@ -106,7 +106,7 @@ header .list-menu li {
 
 header .list-menu a {
     font-family: var(--fonte-midia);
-    text-transform: capitalize;
+    text-transform: none;
     height: 100%;
     padding-top: 80px;
     border: 2px solid white;

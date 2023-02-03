@@ -105,6 +105,7 @@ header .list-menu li {
 
 header .list-menu a {
     font-family: var(--fonte-midia);
+    font-size: 14px;
     text-transform: none;
     height: 100%;
     padding-top: 80px;

@@ -1,0 +1,491 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+@font-face {
+    font-family: Square721;
+    src: url(../fonts/Square721BT-Bold.otf);
+}
+
+/* Typical Device Breakpoints
+------------------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+
+
+/********** CONFIGURAÇÃO PRINCIPAL **********/
+
+:root {
+    --cor0: #f7faff;
+    --cor1: #cbecff;
+    --cor2: #0077c7;
+    --cor3: #02579B;
+    --cor4: #032f55;
+    --cor5: #CECECE;
+    --cor6: #0D0D0D;
+    --cor7: #040829;
+    /*CORES COM TRANSPARENCIA*/
+    --cor8: #dbf2ff4d;
+    /*************************/
+    --cor9: #bd1b1b;
+    --cor10: #00ff00;
+    --cor11: #531a03;
+    --cor12: #ffa500;
+    --cor13: #616161;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-midia: 'Ubuntu', sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-logo: 'Square721', Square721;
+}
+
+/********** CONFIGURAÇÃO DO CABECALHO  **********/
+
+.containerCabecalho {
+    background-attachment: fixed;
+}
+
+/********** CONFIGURAÇÃO DO MENU  **********/
+/********** ITENS MENU **********/
+.list-menu {
+    position: relative;
+    margin: auto;
+    top: -70px;
+}
+
+#link-parceiro {
+    margin-left: 18px;
+    display: inline-block;
+}
+
+.link-parceiro {
+    background: url("../img/ico-utilitarios.png") no-repeat;
+    background-color: white;
+    background-position: 50% 30%;
+}
+
+/********** CONFIGURACAO DA PAGINA PRINCIPAL **********/
+
+.conteudoPrincipal {
+    background: url("../img/fd-desktop.png") no-repeat;
+    background-position: 100% 371px;
+    background-attachment: fixed;
+    background-color: #0C0C0E;
+}
+
+.containerConteudoPrincipal {
+    margin: auto;
+    max-width: 1000px;
+}
+
+.containerCompromisso {
+    max-width: 400px;
+    margin: auto 0px;
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+.containerConteudoSaibaMais {
+    max-width: 700px;
+    margin-right: 80px;
+}
+
+/********** CONFIGURACAO DA PAGINA CERTIFICADO **********/
+
+.containerCertificado{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.birdIdMobile {
+    display: none;
+}
+
+.birdIdDesktop {
+    display: block;
+}
+
+.faixa1-certificado {
+    display: block;
+    float: right;
+    width: 35vw;
+    height: 250px;
+    background-image: linear-gradient(to top, black 80%, transparent 1%);
+    background-color: transparent;
+}
+
+.faixa2-certificado {
+    position: relative;
+    width: 70vw;
+    height: 200px;
+    background-image: linear-gradient(90deg, var(--cor1), black);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5)
+}
+
+/********** CONFIGURACAO DA PAGINA SISTEMA GESTAO **********/
+.pagSistemas {
+    padding: 0px;
+    box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.pag-sistemaGestao {
+    padding-top: 3px;
+}
+
+.containerSistemaGestao {
+    max-width: 1000px;
+    margin: auto;
+    padding-top: 100px;
+    background: url("../img/fd-sistemaGestao-grande.png") no-repeat;
+    background-position: 0px 5px;
+    background-size: cover;
+}
+
+.tituloSistemaGestao {
+    font-family: var(--fonte-destaque);
+    font-size: 60px;
+    padding-top: 50px;
+    letter-spacing: 10px;
+    max-width: 500px;
+    background: none;
+    color: var(--cor7);
+    border: none;
+    box-shadow: none;
+}
+
+.containerSistemaGestao ul {
+    padding: 0px;
+}
+
+.containerSistemaGestao li {
+    width: 140px;
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid var(--cor5);
+    border-radius: 0px;
+}
+
+.containerSistemaGestao li.list-baixo {
+    border: none;
+}
+
+.containerSistemaGestao li:hover {
+    background: none;
+    box-shadow: none;
+    color: var(--cor4);
+}
+
+.identificacaoSistema {
+    margin-top: 100px;
+}
+
+.faixa1-gestao {
+    float: right;
+    width: 70vw;
+    height: 250px;
+    background-image: linear-gradient(to top, black 80%, transparent 1%);
+}
+
+.faixa2-gestao {
+    position: relative;
+    width: 35vw;
+    height: 200px;
+    background-image: linear-gradient(90deg, var(--cor2), var(--cor7));
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5)
+}
+
+/********** CONFIGURACAO DA PAGINA SISTEMA DELIVERY **********/
+
+.containerSistemaDelivery {
+    max-width: 1000px;
+    margin: auto;
+    padding: 80px 20px;
+    background: url("../img/fd-sistemaDelivery-grande.jpg") no-repeat;
+    background-position: 70%;
+}
+
+.tituloSistemaDelivery {
+    padding: 10px;
+    font-size: 35px;
+    text-align: center;
+}
+
+.conteudoSistemaDelivery {
+    max-width: max-content;
+    margin: 10px;
+}
+
+.conteudoSistemaDelivery li {
+    display: table-cell;
+    vertical-align: middle;
+    height: 80px;
+    margin-bottom: 20px;
+    border: 3px solid var(--cor9);
+    border-left: none;
+    border-radius: 0px 20px 20px 0px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.conteudoSistemaDelivery em {
+    display: inline-block;
+    opacity: 0;
+    max-width: 200px;
+    height: max-content;
+    padding: 0px 5px;
+    font-size: 12px;
+    text-align: center;
+    margin-left: -200px;
+    border-right: 1px dashed var(--cor5);
+    transition: all 0.5s;
+}
+
+.conteudoSistemaDelivery strong {
+    display: inline-block;
+    width: 100px;
+    padding: 0px 5px;
+    font-size: 15px;
+    box-shadow: none;
+    color: var(--cor9);
+    text-shadow: none;
+}
+
+.conteudoSistemaDelivery li:hover em {
+    opacity: 1;
+    margin-left: 0px;
+    transition: 0.5s;
+}
+
+.conteudoSistemaDelivery .texto-meio {
+    margin-bottom: 10px;
+}
+
+.list-pao, 
+.list-tomate,
+.list-alface,
+.list-hamburguer,
+.list-paoBase {
+    background: none;
+}
+
+.texto-esquerda {
+    display: block;
+    float: right;
+    max-width: 150px;
+    margin: 90px 140px 0px 0px;
+    font-family: var(--fonte-midia);
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--cor6);
+}
+
+.faixa1-delivery {
+    display: block;
+    float: right;
+    width: 35vw;
+    height: 250px;
+    background-image: linear-gradient(to top, black 80%, transparent 1%);
+}
+
+.faixa2-delivery {
+    position: relative;
+    width: 70vw;
+    height: 200px;
+    background-image: linear-gradient(90deg, var(--cor9), var(--cor6));
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5)
+}
+
+/********** CONFIGURACAO DA PAGINA PARCEIROS **********/
+
+.pagUtilitarios {
+    display: block;
+    background-color: white;
+}
+
+.containerUtilitarios {
+    max-width: 1000px;
+    padding: 100px 0px 50px;
+    margin: auto;
+}
+
+.parceiros {
+    display: inline-block;
+    width: 68%;
+}
+
+.pagUtilitarios h2 {
+    max-width: 330px;
+    font-family: var(--fonte-destaque);
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 5px;
+    padding: 5px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.parceiros table {
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.pagUtilitarios td {
+    font-weight: bold;
+    font-size: 12px;
+    width: 150px;
+    height: 100px;
+    text-align: center;
+    color: transparent;
+    border: 2px solid var(--cor5);
+}
+
+
+.pagUtilitarios td.annieb {
+    background: url("../img/logo-annieb.png") no-repeat;
+    background-position: 50%;
+}
+
+.pagUtilitarios td.agroTech {
+    background: url("../img/logo-agroTech.png") no-repeat;
+    background-position: 50%;
+}
+
+.pagUtilitarios td.wa {
+    background: url("../img/logo-wa.png") no-repeat;
+    background-position: 50%;
+}
+
+.pagUtilitarios td.multybichos {
+    background: url("../img/logo-multybichos.png") no-repeat;
+    background-position: 50%;
+}
+
+.pagUtilitarios td.chibay {
+    background: url("../img/logo-chibay.png") no-repeat;
+    background-position: 50%;
+}
+
+.pagUtilitarios td.ichiban {
+    background: url("../img/logo-ichiban.png") no-repeat;
+    background-position: 50%;
+}
+
+.pagUtilitarios td.mrBistteca {
+    background: url("../img/logo-mrBistteca.png") no-repeat;
+    background-position: 50%;
+}
+
+.pagUtilitarios td.surubim {
+    background: url("../img/logo-surubim.png") no-repeat;
+    background-position: 50%;
+}
+
+.pagUtilitarios td.botecoLiu {
+    background: url("../img/logo-botecoLiu.png") no-repeat;
+    background-position: 50%;
+}
+
+.pagUtilitarios td.vacari {
+    background: url("../img/logo-vacari.png") no-repeat;
+    background-position: 50%;
+}
+
+.pagUtilitarios td.ligGas {
+    background: url("../img/logo-ligGas.png") no-repeat;
+    background-position: 50%;
+}
+
+.pagUtilitarios td.trogueCafe {
+    background: url("../img/logo-trogueCafe.png") no-repeat;
+    background-position: 50%;
+}
+
+.pagUtilitarios td.mgaTech {
+    background: url("../img/logo-mgaTech.png") no-repeat;
+    background-position: 50%;
+}
+
+.pagUtilitarios td.inovaTruck {
+    background: url("../img/logo-inovaTruck.png") no-repeat;
+    background-position: 50%;
+}
+
+.pagUtilitarios td.ivan {
+    background: url("../img/logo-ivan.png") no-repeat;
+    background-position: 50%;
+}
+
+.pagUtilitarios td.marialva {
+    background: url("../img/logo-marialva.png") no-repeat;
+    background-position: 50%;
+}
+
+.pagUtilitarios .downloads {
+    float: right;
+    width: 29%;
+    margin-right: 20px;
+    padding: 25px;
+    background: url("../img/fd-utilitarios.jpg") no-repeat;
+    background-image: linear-gradient(160deg, var(--cor3), var(--cor6));
+    background-size: cover;
+    border: 5px solid white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.pagUtilitarios h3 {
+    font-family: var(--fonte-midia);
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 5px;
+    padding: 5px;
+    color: white;
+}
+
+.pagUtilitarios ul {
+    list-style: none;
+    text-align: center;
+    padding: 60px 20px;
+    padding-bottom: 6px;
+}
+
+.pagUtilitarios li {
+    margin-bottom: 20px;
+}
+
+.pagUtilitarios a {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    width: 150px;
+    margin: auto;
+    padding: 10px;
+    color: var(--cor0);
+    background-image: linear-gradient(90deg, var(--cor7), transparent);
+    border-radius: 10px;
+}
+
+.pagUtilitarios a:hover {
+    scale: 1.1;
+    color: white;
+    background-color: var(--cor4);
+    box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.5);
+}
+
+/********** CONFIGURACAO DA PAGINA FALE CONOSCO**********/
+
+.conteudo-rodape::after {
+    width: 85%;
+}

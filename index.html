@@ -9,127 +9,187 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/principal.css">
-    <link rel="stylesheet" href="css/telatablet.css" media="screen and (min-width: 768px)">
-    <link rel="stylesheet" href="css/telagrande.css" media="screen and (min-width: 1006px)">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/mobileLarge.css" media="screen and (min-width: 460px)">
+    <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 1006px)">
     <script src="script/menu-burguer.js"></script>
+    <script src="script/saiba-mais.js"></script>
 </head>
 
 <body onresize="mudouTamanho()" onload="mudouTamanho()">
-    <header>
-        <aside class="logo"></aside>
-        <aside class="texto">
-            <h1 class="txt-nomePrincipal">TecMicro Digital</h1>
-            <h2 class="txt-deliveryPrincipal">Aplicativo Delivery</h2>
-            <h3 class="txt-gestaoPrincipal">Software de Gestão</h3>
-        </aside>
-        <menu class="menu">
-            <span id="btBurguer" class="material-symbols-outlined bt-burguer" onclick="clickMenu()">menu</span>
-            <ul id="itensMenu" class="list-menu">
-                <li><a href="https://wa.me/554499041018" target="_blank" class="link-whats">Nosso Whats</a></li>
-                <li><a href="#pag-sistemaGestao" class="link-sisGestao">Sistema Gestão</a></li>
-                <li><a href="#pag-sistemaDelivery" class="link-sisDelivery">Sistema Delivery</a></li>
-                <li><a href="#pag-faleconosco" class="link-faleConosco">Fale Conosco</a></li>
-                <li><a href="downloads/SuportePinha.exe" download="SuportePinha.exe" type="application/x-msdownload" class="link-suporte">Suporte</a></li>
-                <li id="link-utilitarios"><a href="#pag-utilitarios" class="link-utilitarios">Parceiros e Links</a></li>
-            </ul>
-        </menu>
-    </header>
-    <main class="pag-principal">
-        <article class="txt-telaGrande">
-            <aside class="compromisso">
-                <h1>Software comercial!</h1>
-                <p class="texto">
-                    <em>
-                        "Trabalhamos com responsabilidade para oferecer qualidade no suporte e entregar um sistema que
-                        atenda
-                        a sua
-                        necessidade."
-                    </em>
-                </p>
-            </aside>
-            <aside class="atendimento">
-                <p class="texto">
-                    Nosso sistema oferece suporte <strong>completo</strong> para o seu negócio, disponibilizando
-                    plataformas
-                    que atendem o
-                    comércio de atacado e varejo como: <em>
-                        lojas, materiais de construção, indústria, insumos e, ferramentas
-                        específicas com usabilidade fácil para lanchonetes e restaurantes
-                    </em>
-                </p>
-                </as>
-        </article>
-        <a class="fd-principal" href="https://wa.me/554499041018" target="_blank">Clique para conversar</a>
-    </main>
+    <main id="containerSite" class="containerSite">
+        <header class="containerCabecalho">
+            <div class="containerLogo">
+                <h1 class="nomeLogo">TecMicro Digital</h1>
+            </div>
+            <div class="containerApresentacao">
+                <div class="corLateralApresentacao"></div>
+                <div class="imgFundoApresentacao"></div>
+                <div class="containerTxtApresentacao">
+                    <h2 class="txtApresentacao txtDeliveryApresentacao">Aplicativo Delivery</h2>
+                    <h3 class="txtApresentacao txtGestaoApresentacao">Software de Gestão</h3>
+                    <h2 class="txtApresentacao txtCertificadoApresentacao">Certificados Digitais</h2>
+                </div>
+            </div>
 
-    <section id="pag-sistemaGestao" class="pag-sistemas pag-sistemaGestao">
-        <article class="conteudos conteudo-gestao">
-            <h4>Um sistema completo para sua gestão!</h4>
-            <ul class="list-gestao">
-                <li><strong>Controle Financeiro</strong><br><em>Fluxo de Caixa, Compras e Vendas</em></li>
-                <li><strong>Controle de Estoque</strong><br><em>Entrada, Saída, Controle de compras</em></li>
-                <li class="list-baixo"><strong>Controle de Produção</strong><br><em>Ficha técnica de Montagem para
-                        Produção</em></li>
-                <li><strong>Nota Fiscal Eletrônica</strong><br><em>NF-e, MDF-e, CT-e NFS-e Importação xml</em></li>
-                <li><strong>Emissão de Boletos</strong><br><em>Integração com bancos credenciados</em></li>
-                <li class="list-baixo"><strong>App de Vendas</strong><br><em>Vendas direto pelo celular ou tablet</em>
-                </li>
-                <li><strong>Comissões de Vendas</strong><br><em>Comissões gerenciaveis para vendedores</em></li>
-                <li><strong>Acesso Externo</strong><br><em>Acesse o sistema de onde estiver</em></li>
-                <li class="list-baixo"><strong>Relatório Gerenciais</strong><br><em>Relatórios completos para
-                        gestão</em></li>
-            </ul>
-            <h5>Sistema Gestão</h5>
-        </article>
-        <div class="faixa-1"></div>
-        <div class="faixa-2"></div>
-    </section>
-
-    <section id="pag-sistemaDelivery" class="pag-sistemas pag-sistemaDelivery">
-        <article class="conteudos conteudo-delivery">
-            <h4>Que tal agilizar o atendimento e pedido dos seus clientes?</h4>
-            <ul class="list-delivery">
-                <div class="texto-meio">
-                    <li><em>O garçom consegue executar o atendimento diretamente na mesa através do
-                            aplicativo</em><strong class="list-pao">Atenda mesas pelo celular</strong></li>
-                </div>
-                <div class="texto-meio">
-                    <li><em>Faça abertura e fechamento de caixa por funcionarios e turnos diferentes</em><strong
-                            class="list-tomate">Fluxo de caixa</strong></li>
-                </div>
-                <div class="texto-meio">
-                    <li><em>Além da impressão de pedidos, você pode trabalhar atráves de um monito ou smart TV, assim
-                            controla o horário dos pedidos</em><strong class="list-alface">Integração com TV para
-                            pedidos</strong></li>
-                </div>
-                <div class="texto-meio">
-                    <li><em>Os pedidos feitos caem diretamente na cozinha, podem ser impressos ou jogados na
-                            tela</em><strong class="list-hamburguer">Pedido automatico na cozinha</strong></li>
-                </div>
-                <div class="texto-meio">
-                    <li><em>Use um app exclusivo seu, você define as taxas de entregas e lucros, os clientes acessam e
-                            pedem de forma prática</em><strong class="list-paoBase">App exclusico para Delivery</strong>
+            <menu class="menu">
+                <span id="btBurguer" class="material-symbols-outlined bt-burguer" onclick="clickMenu()">menu</span>
+                <ul id="itensMenu" class="list-menu">
+                    <small id="fechaMenu" class="fechaMenu" onclick="clickFechaMenu()">X</small>
+                    <li><a href="https://wa.me/554499041018" target="_blank" class="link link-whats">Nosso Whats</a>
                     </li>
-                </div>
-            </ul>
-            <h6>Temos o sistema ideal para você!</h6>
-            <h6 class="texto-esquerda">Clique a esquerda para mais informações</h6>
-            <h5>Sistema Delivery</h5>
-        </article>
-        <div class="faixa-1"></div>
-        <div class="faixa-2"></div>
-    </section>
-    <section id="pag-contato" class="pag-contato">
-        <article class="conteudo-contato">
+                    <li><a href="#pagSistemaGestao" class="link link-sisGestao">Sistema Gestão</a></li>
+                    <li><a href="#pagSistemaDelivery" class="link link-sisDelivery">Sistema Delivery</a></li>
+                    <li><a href="#pagFaleconosco" class="link link-faleConosco">Fale Conosco</a></li>
+                    <li><a href="docs/SuporteTecmicro.msi" download="SuporteTecMicro.msi"
+                            type="application/x-msdownload" class="link link-suporte">Suporte</a></li>
+                    <li id="link-parceiro"><a href="#pagUtilitarios" class="link link-parceiro">Parceiros e Links</a>
+                    </li>
+                    <li id="link-appgarcom"><a href="docs/mmrest.apk" class="link link-appgarcom">App Restaurante</a></li>
+                </ul>
+            </menu>
+            <div id="escureceMenuAtivo" class="escureceMenuAtivo"></div>
+        </header>
 
-        </article>
-    </section>
+        <section class="conteudoPrincipal">
+            <article class="containerConteudoPrincipal">
+                <aside class="containerCompromisso">
+                    <h3 class="tituloNossoDiferencial">Atendimento de qualidade?</h3>
+                    <p class="textoConteudoPrincipal">
+                        <em>
+                            "Trabalhamos com responsabilidade para oferecer qualidade no suporte e entregar um sistema
+                            que
+                            atenda
+                            a sua
+                            necessidade."
+                        </em>
+                    </p>
+                </aside>
+                <span id="saibaMais" class="saibaMais" onclick="clickSaibaMais()">&#10132; SAIBA MAIS</span>
+                <aside id="containerConteudoSaibaMais" class="containerConteudoSaibaMais">
+                    <p class="textoConteudoPrincipal">
+                        Nosso sistema oferece suporte <strong>completo</strong> para o seu negócio, disponibilizando
+                        plataformas
+                        que atendem o
+                        comércio de atacado e varejo como: <strong>
+                            <em>
+                                lojas, materiais de construção, indústria, insumos e, ferramentas
+                                específicas com usabilidade fácil para lanchonetes e restaurantes
+                            </em>
+                        </strong>
+                        <span class="saibaMais esconderSaibaMais" onclick="clickEsconderSaibaMais()">ESCONDER
+                            &larr;</span>
+                    </p>
+                </aside>
+            </article>
 
-    <section id="pag-utilitarios" class="pag-utilitarios">
-        <article class="conteudo-utilitarios">
+            <div class="containerWhatsApp">
+                <small class="textoFalarWhats">FALAR NO WHATS &#10132;</small>
+                <a class="whatsApp" href="https://wa.me/554499041018" target="_blank"></a>
+            </div>
+        </section>
+
+        <section class="pagCertificado">
+            <article class="containerCertificado">
+                <aside class="containerConteudoCertificado">
+                    <div class="containerLogoSoluti">
+                        <h2 class="txtLogoSoluti">Somos Parceiros</h2>
+                        <div class="logoSoluti"></div>
+                    </div>
+                    <div>
+                        <p class="textoConteudoCertificado">Agora a TecMicro Digital tem parceria com especialistas em
+                            identidade virtual.</p>
+                        <p class="textoConteudoCertificado">Emitimos o seu certificado digital A1 e, entregamos o
+                            arquivo pronto pra você.</p>
+                    </div>
+                </aside>
+                <aside class="containerBotoesCertificado">
+                    <div class="containerIdentidadeCerficado">
+                        <h2 class="textoIdentidadeCertificado tituloTextoIdentidade">Não fique sem identidade virtual.
+                        </h2>
+                        <h1 class="textoIdentidadeCertificado tituloTextoCertificado">FAÇA AGORA O SEU CERTIFICADO
+                            DIGITAL!
+                        </h1>
+                        <a href="https://wa.me/554499041018" class="botaoPedirCertificado">>>> CLIQUE PARA PEDIR <<<<
+                                /a>
+                    </div>
+                    <a href="https://play.google.com/store/apps/details?id=br.com.vaultid.apps.authenticator"
+                        class="botaoBirdId birdIdMobile" target="_blank">Bird Id Mobile</a>
+                    <a href="docs/birdIDDesktop.exe" class="botaoBirdId birdIdDesktop">Bird Id Desktop</a>
+                </aside>
+                <h5 class="identificacaoSistema">Certificado Digital</h5>
+            </article>
+            <div class="faixa1 faixa1-certificado"></div>
+            <div class="faixa2 faixa2-certificado"></div>
+        </section>
+
+        <section id="pagSistemaGestao" class="pagSistemas pagSistemaGestao">
+            <article class="containerSistemas containerSistemaGestao">
+                <h4 class="tituloSistemaGestao">Um sistema completo para sua gestão!</h4>
+                <ul class="conteudoSistemaGestao">
+                    <li><strong>Controle Financeiro</strong><br><em>Fluxo de Caixa, Compras e Vendas</em></li>
+                    <li><strong>Controle de Estoque</strong><br><em>Entrada, Saída, Controle de compras</em></li>
+                    <li class="list-baixo"><strong>Controle de Produção</strong><br><em>Ficha técnica de Montagem para
+                            Produção</em></li>
+                    <li><strong>Nota Fiscal Eletrônica</strong><br><em>NF-e, MDF-e, CT-e NFS-e Importação xml</em></li>
+                    <li><strong>Emissão de Boletos</strong><br><em>Integração com bancos credenciados</em></li>
+                    <li class="list-baixo"><strong>App de Vendas</strong><br><em>Vendas direto pelo celular ou
+                            tablet</em>
+                    </li>
+                    <li><strong>Comissões de Vendas</strong><br><em>Comissões gerenciaveis para vendedores</em></li>
+                    <li><strong>Acesso Externo</strong><br><em>Acesse o sistema de onde estiver</em></li>
+                    <li class="list-baixo"><strong>Relatório Gerenciais</strong><br><em>Relatórios completos para
+                            gestão</em></li>
+                </ul>
+                <h5 class="identificacaoSistema">Sistema Gestão</h5>
+            </article>
+        </section>
+        <div class="faixa1 faixa1-gestao"></div>
+        <div class="faixa2 faixa2-gestao"></div>
+
+        <section id="pagSistemaDelivery" class="pagSistemas pagSistemaDelivery">
+            <article class="containerSistemas containerSistemaDelivery">
+                <h4 class="tituloSistemaDelivery">Que tal agilizar o atendimento e pedido dos seus clientes?</h4>
+                <ul class="conteudoSistemaDelivery">
+                    <div class="texto-meio">
+                        <li><em>O garçom consegue executar o atendimento diretamente na mesa através do
+                                aplicativo</em><strong class="list-pao">Atenda mesas pelo celular</strong></li>
+                    </div>
+                    <div class="texto-meio">
+                        <li><em>Faça abertura e fechamento de caixa por funcionarios e turnos diferentes</em><strong
+                                class="list-tomate">Fluxo de caixa</strong></li>
+                    </div>
+                    <div class="texto-meio">
+                        <li><em>Além da impressão de pedidos, você pode trabalhar atráves de um monito ou smart TV,
+                                assim
+                                controla o horário dos pedidos</em><strong class="list-alface">Integração com TV para
+                                pedidos</strong></li>
+                    </div>
+                    <div class="texto-meio">
+                        <li><em>Os pedidos feitos caem diretamente na cozinha, podem ser impressos ou mostrados em
+                                tela</em><strong class="list-hamburguer">Pedido automatico na cozinha</strong></li>
+                    </div>
+                    <div class="texto-meio">
+                        <li><em>Use um app exclusivo seu, você define as taxas de entregas e lucros, os clientes acessam
+                                e
+                                pedem de forma prática</em><strong class="list-paoBase">App exclusico para
+                                Delivery</strong>
+                        </li>
+                    </div>
+                </ul>
+                <h6 class="texto-direita">Temos o sistema ideal para você!</h6>
+                <h7 class="texto-esquerda">Clique a esquerda para mais informações</h7>
+                <h5 class="identificacaoSistema">Sistema Delivery</h5>
+            </article>
+        </section>
+        <div class="faixa1 faixa1-delivery"></div>
+        <div class="faixa2 faixa2-delivery"></div>
+
+        <section id="pagUtilitarios" class="pagUtilitarios">
+            <article class="containerUtilitarios">
                 <aside class="parceiros">
-                    <h2 >Amigos e Parceiros</h2>
+                    <h2>Amigos e Parceiros</h2>
                     <table>
                         <tr>
                             <td class="annieb"></td>
@@ -160,77 +220,87 @@
                 <aside class="downloads">
                     <h3>Downloads Uteis</h3>
                     <ul>
-                        <li><a href="downloads/bematechMP4200x64.exe" download="Driver Bematech 4200.exe" type="application/x-msdownload">Bematech 4200</a></li>
-                        <li><a href="downloads/epsonTM20.exe" download="Driver Epson T20.exe" type="application/x-msdownload">Epson T20</a></li>
-                        <li><a href="downloads/impressoraArgox.rar" download="Driver Argox.rar" type="application/x-rar-compressed">Argox 214</a></li>
-                        <li><a href="downloads/impressoraPDF.rar" download="Driver Impressora PDF.rar" type="application/x-rar-compressed">Impressora PDF</a></li>
-                        <li><a href="downloads/comunicacaobalanca.exe" download="Teste de Comunicação Serial.exe" type="application/x-msdownload">Teste Serial</a></li>
+                        <li><a href="docs/bematechMP4200x64.exe" download="Driver Bematech 4200.exe"
+                                type="application/x-msdownload">Bematech 4200</a></li>
+                        <li><a href="docs/driver_I8.rar" download="Driver Elgin I8.rar"
+                                type="application/x-rar-compressed">Elgin I8</a></li>
+                        <li><a href="docs/epsonTM20.exe" download="Driver Epson T20.exe"
+                                type="application/x-msdownload">Epson T20</a></li>
+                        <li><a href="docs/impressoraArgox.rar" download="Driver Argox.rar"
+                                type="application/x-rar-compressed">Argox 214</a></li>
+                        <li><a href="docs/impressoraPDF.rar" download="Driver Impressora PDF.rar"
+                                type="application/x-rar-compressed">Impressora PDF</a></li>
+                        <li><a href="docs/comunicacaobalanca.exe" download="Teste de Comunicação Serial.exe"
+                                type="application/x-msdownload">Teste Serial</a></li>
                     </ul>
                 </aside>
-        </article>
-    </section>
+            </article>
+        </section>
 
-    
-
-    <footer id="pag-faleconosco" class="pag-faleconosco">
-        <article class="rodape">
-            <aside class="sobreNos conteudo-rodape">
-                <h3>Sobre nós</h3>
-                <p>
-                    Somos uma equipe especializada em serviços de informática. Trbalhamos com Software de Gestão para
-                    lojas e restaurantes juntamente com nossos parceiros <strong><a href="https://mminfo.me/"
-                            target="_blank">MM INFORMÁTICA</a></strong> e, prestamos manutenção de rede e hardware
-                    local.
-                </p>
-                <a class="links-rodape link-face" href="https://www.facebook.com/tecmicrodigital" target="_blank"></a>
-                <a class="links-rodape link-insta" href="https://www.instagram.com/tecmicrodigital" target="_blank"></a>
-                <a class="links-rodape link-tecmicro" href="https://tecmicrodigital.com.br/" target="_blank"></a>
-                <a class="links-rodape link-mm" href="https://mminfo.me/" target="_blank"></a>
-            </aside>
-            <aside class="endereco conteudo-rodape">
-                <h3>Endereço</h3>
-                <ul>
-                    <li><a class="link-maps"
-                            href="https://www.google.com/maps/place/TECMICRO+DIGITAL/@-23.4883866,-51.7948302,17z/data=!3m1!4b1!4m5!3m4!1s0x94ecc5a05790cbfb:0xd6597ed4f2dde5cf!8m2!3d-23.4883866!4d-51.7926415"
-                            target="_blank"></a>
-                        <p>Avenida Rui Barbosa, 140 - Centro, Marialva-PR</p>
-                    </li>
-                    <li><a class="link-phone" href="tel:+554430152842"></a>
-                        <p>(44) 3015-2842 / (44) 99914-1018</p>
-                    </li>
-                    <li><a class="link-mail" href="malito:tecmicro@tecmicrodigital.com.br"></a>
-                        <p>tecmicro@tecmicrodigital.com.br</p>
-                    </li>
-                </ul>
-            </aside>
-            <aside class="contato conteudo-rodape">
-                <h3>Contato</h3>
-                <form action="enviar.php">
+        <footer id="pagFaleconosco" class="pagFaleconosco">
+            <article class="rodape">
+                <aside class="sobreNos conteudo-rodape">
+                    <h3>Sobre nós</h3>
                     <p>
-                        <label for="iemail">Email *</label>
-                        <input type="email" name="email" id="iemail" required placeholder="Seu e-mail">
+                        Somos uma equipe especializada em serviços de informática. Trbalhamos com Software de Gestão
+                        para
+                        lojas e restaurantes juntamente com nossos parceiros <strong><a href="https://mminfo.me/"
+                                target="_blank">MM INFORMÁTICA</a></strong> e, prestamos manutenção de rede e hardware
+                        local.
                     </p>
-                    <p>
-                        <label for="imsg">Mensagem *</label>
-                        <textarea name="msg" id="imsg" cols="30" rows="3" placeholder="Deixe sua mensagem"></textarea>
-                    </p>
-                    <button type="submit">Enviar</button>
-                </form>
-            </aside>
-        </article>
-        <span>&copy Desenvolvido por TecMicro Digital</span>
-    </footer>
+                    <a class="links-rodape link-face" href="https://www.facebook.com/tecmicrodigital"
+                        target="_blank"></a>
+                    <a class="links-rodape link-insta" href="https://www.instagram.com/tecmicrodigital"
+                        target="_blank"></a>
+                    <a class="links-rodape link-tecmicro" href="https://tecmicrodigital.com.br/" target="_blank"></a>
+                    <a class="links-rodape link-mm" href="https://mminfo.me/" target="_blank"></a>
+                </aside>
+                <aside class="endereco conteudo-rodape">
+                    <h3>Endereço</h3>
+                    <ul>
+                        <li><a class="link-maps"
+                                href="https://www.google.com/maps/place/TECMICRO+DIGITAL/@-23.4883866,-51.7948302,17z/data=!3m1!4b1!4m5!3m4!1s0x94ecc5a05790cbfb:0xd6597ed4f2dde5cf!8m2!3d-23.4883866!4d-51.7926415"
+                                target="_blank"></a>
+                            <p>Avenida Rui Barbosa, 140 - Centro, Marialva-PR</p>
+                        </li>
+                        <li><a class="link-phone" href="tel:+554430152842"></a>
+                            <p>(44) 3015-2842 / (44) 99914-1018</p>
+                        </li>
+                        <li><a class="link-mail" href="malito:tecmicro@tecmicrodigital.com.br"></a>
+                            <p>tecmicro@tecmicrodigital.com.br</p>
+                        </li>
+                    </ul>
+                </aside>
+                <aside class="contato conteudo-rodape">
+                    <h3>Contato</h3>
+                    <form action="enviar.php">
+                        <p>
+                            <label for="iemail">Email *</label>
+                            <input type="email" name="email" id="iemail" required placeholder="Seu e-mail">
+                        </p>
+                        <p>
+                            <label for="imsg">Mensagem *</label>
+                            <textarea name="msg" id="imsg" cols="30" rows="3"
+                                placeholder="Deixe sua mensagem"></textarea>
+                        </p>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </aside>
+            </article>
+            <small class="desenvolvido">&copy Desenvolvido por TecMicro Digital</small>
+        </footer>
+    </main>
 
     <a id="btnTopo" href="#" class="voltarTopo">&#9650;</a>
 
     <script>
-        window.onscroll = function() {
+        window.onscroll = function () {
             scroll();
         }
 
         function scroll() {
             var btnTopo = document.getElementById("btnTopo");
-            if(document.documentElement.scrollTop > 250) {
+            if (document.documentElement.scrollTop > 250) {
                 btnTopo.style.display = "block";
             } else {
                 btnTopo.style.display = "none";
@@ -238,4 +308,5 @@
         }
     </script>
 </body>
+
 </html>

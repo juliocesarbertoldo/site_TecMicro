@@ -1,0 +1,413 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+@font-face {
+    font-family: Square721;
+    src: url(../fonts/Square721BT-Bold.otf);
+}
+
+/* Typical Device Breakpoints
+------------------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+
+
+/********** CONFIGURAÇÃO PRINCIPAL **********/
+
+:root {
+    --cor0: #f7faff;
+    --cor1: #cbecff;
+    --cor2: #0077c7;
+    --cor3: #02579B;
+    --cor4: #032f55;
+    --cor5: #CECECE;
+    --cor6: #0D0D0D;
+    --cor7: #040829;
+    /*CORES COM TRANSPARENCIA*/
+    --cor8: #dbf2ff4d;
+    /*************************/
+    --cor9: #bd1b1b;
+    --cor10: #00ff00;
+    --cor11: #531a03;
+    --cor12: #ffa500;
+    --cor13: #616161;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-midia: 'Ubuntu', sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-logo: 'Square721', Square721;
+}
+
+/********** CONFIGURAÇÃO DO CABECALHO  **********/
+
+.containerCabecalho {
+    position: relative;
+    height: 340px;
+    background: url("../img/fd-escritorio.jpg") no-repeat;
+    background-position: top left;
+    background-color: #0c0c0e;
+    box-shadow: none;
+}
+
+.corLateralApresentacao {
+    display: none;
+}
+
+.imgFundoApresentacao {
+    display: none;
+}
+
+.containerLogo {
+    height: 340px;
+    background: url("../img/logo-tecmicro-completo.png") no-repeat;
+    background-position: 5% 20%;
+    background-size: 200px;
+    border: none;
+}
+
+.nomeLogo {
+    display: none;
+}
+
+.containerTxtApresentacao {
+    top: -290px;
+    margin-left: 40%;
+    background: none;
+}
+
+.txtDeliveryApresentacao {
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+
+.txtGestaoApresentacao {
+    font-size: 40px;
+    text-indent: 30px;
+    letter-spacing: 8px;
+}
+
+/********** CONFIGURAÇÃO DO MENU  **********/
+/********** BOTAO **********/
+
+.bt-burguer {
+    display: none;
+}
+
+/********** ITENS MENU **********/
+
+.list-menu {
+    position: absolute;
+    top: 270px;
+    left: 0px;
+    width: max-content;
+    padding: 0px;
+    background-image: linear-gradient(to bottom, white, var(--cor5), white);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s linear;
+}
+
+.list-menu li {
+    display: inline-block;
+    width: 135px;
+    height: 135px;
+    margin-right: -2px;
+    background-color: white;
+}
+
+.list-menu .link {
+    height: 100%;
+    padding-top: 80px;
+    font-family: var(--fonte-midia);
+    font-size: 14px;
+    text-transform: none;
+    border: 2px solid white;
+    color: var(--cor13);
+}
+
+.fechaMenu {
+    display: none;
+}
+
+.list-menu .link:hover {
+    scale: 1.1;
+    transition: all 0.3s linear;
+}
+
+.link-whats {
+    display: block;
+    background: url("../img/ico-whats.png") no-repeat;
+    background-color: white;
+    background-position: 50% 30%;
+}
+
+.link-sisGestao {
+    background: url("../img/ico-sisGestao.png") no-repeat;
+    background-color: white;
+    background-position: 50% 30%;
+    margin-right: -1px;
+}
+
+.link-sisDelivery {
+    background: url("../img/ico-sisDelivery.png") no-repeat;
+    background-color: white;
+    background-position: 50% 30%;
+}
+
+.link-faleConosco {
+    display: block;
+    background: url("../img/ico-faleConosco.png") no-repeat;
+    background-color: white;
+    background-position: 50% 30%;
+}
+
+.list-menu .link-suporte {
+    display: block;
+    width: 140px;
+    margin: auto 7px;
+    font-weight: bolder;
+    background: url("../img/ico-suporte.png") no-repeat;
+    background-position: 50% 35%;
+    background-color: var(--cor2);
+    color: white;
+    scale: 1.1;
+}
+
+.list-menu .link-suporte:hover {
+    scale: 1.2;
+}
+
+#link-appgarcom {
+    display: none;
+}
+
+
+
+/********** CONFIGURACAO DA PAGINA PRINCIPAL **********/
+
+.conteudoPrincipal {
+    padding-top: 80px;
+    background: url("../img/fd-tablet.png") no-repeat;
+    background-position: 100% 371px;
+    background-attachment: fixed;
+    background-color: #0C0C0E;
+}
+
+ .containerCompromisso {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 40px;
+    padding: 10px;
+    background-image: linear-gradient(var(--cor6), var(--cor6));
+    border: 1px solid var(--cor8);
+    border-radius: 10px 2px;
+}
+
+.tituloNossoDiferencial {
+    display: none;
+}
+
+.textoConteudoPrincipal {
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: var(--cor5);
+}
+
+.containerConteudoSaibaMais {
+    display: block;
+    width: 75%;
+    margin-bottom: 10px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid var(--cor0);
+    border-radius: 20px 5px;
+}
+
+.saibaMais {
+    display: none;
+}
+
+.containerWhatsApp {
+    display: none;
+}
+
+/********** CONFIGURACAO DA PAGINA CERTIFICADO **********/
+
+
+.containerCertificado{
+    padding: 20px;
+    background: url("../img/fd-certificado-tablet.png") no-repeat;
+    background-position: 520px 330px;
+    background-size: 500px;
+}
+
+.containerConteudoCertificado {
+    width: 100%;
+    max-width: 728px;
+    padding: 0px;
+}
+
+.containerLogoSoluti {
+    display: block;
+    height: max-content;
+}
+
+.txtLogoSoluti {
+    padding: 0px 10px;
+    font-size: 35px;
+    font-weight: 800;
+    text-align: start;
+    letter-spacing: 15px;
+    line-height: 75px;
+}
+
+.logoSoluti {
+    display: block;
+    float: right;
+    width: 310px;
+    height: 140px;
+}
+
+.textoConteudoCertificado {
+    width: 418px;
+    padding: 10px;
+    text-indent: 20px;
+    line-height: 1.79;
+}
+
+.containerBotoesCertificado {
+    display: grid;
+    grid-template-columns: 500px auto;
+    align-items: center;
+    margin-top: 50px;
+    margin-right: -20px;
+}
+
+.containerIdentidadeCerficado {
+    width: 500px;
+    margin: 0px;
+}
+
+.faixa1-certificado {
+    height: 100px;
+    background-image: linear-gradient(var(--cor13), var(--cor6));
+}
+
+/********** CONFIGURACAO DA PAGINA SISTEMA GESTAO **********/
+
+.containerSistemaGestao {
+    padding-top: 30px;
+    background: url("../img/fd-sistemaGestao-tablet.png") no-repeat;
+    background-position: 0% 70%;
+}
+
+.tituloSistemaGestao {
+    float: left;
+    max-width: 300px;
+    margin-top: 40px;
+    text-transform: none;
+    background-color: var(--cor2);
+    color: white;
+    border: 1px solid var(--cor5);
+    border-radius: 20px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.containerSistemaGestao ul {
+    display: block;
+    padding-left: 50px;
+}
+
+.containerSistemaGestao li {
+    padding-top: 30px;
+    cursor: pointer;
+}
+
+.containerSistemaGestao li:hover {
+    padding-top: 10px;
+    background-color: var(--cor8);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+}
+
+.containerSistemaGestao em {
+    opacity: 0;
+}
+
+.containerSistemaGestao li:hover em {
+    opacity: 1;
+    transition: 0.7s;
+}
+
+.identificacaoSistema {
+    padding: 20px;
+    padding-top: 50px;
+    font-size: 12px;
+    letter-spacing: 10px;
+}
+
+.faixa1-gestao {
+    height: 100px;
+    background-image: linear-gradient(var(--cor2), var(--cor7));
+}
+
+/********** CONFIGURACAO DA PAGINA SISTEMA DELIVERY **********/
+
+.containerSistemaDelivery {
+    background: url("../img/fd-sistemaDelivery-tablet.jpg") no-repeat;
+    background-position: 100%;
+}
+
+.tituloSistemaDelivery {
+    font-size: 27px;
+    padding-top: 20px;
+}
+
+.conteudoSistemaDelivery {
+    width: 60%;
+    display: inline-block;
+}
+
+.texto-direita {
+    display: block;
+    float: right;
+    max-width: 190px;
+    font-family: var(--fonte-midia);
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    letter-spacing: 5px;
+    margin: 50px 85px 0px 0px;
+    color: var(--cor7);
+}
+
+/********** CONFIGURACAO DA PAGINA PARCEIROS **********/
+/****/
+
+/********** CONFIGURACAO DA PAGINA FALE CONOSCO**********/
+
+.rodape {
+    display: flex;
+    margin: auto;
+}
+
+.rodape .conteudo-rodape {
+    flex-basis: 50%;
+    padding: 10px;
+}
+
+.rodape .conteudo-rodape::before {
+    top: 55px
+}
+
+.rodape .conteudo-rodape::after {
+    top: 55px;
+    left: 50px;
+    width: 75%;
+}
